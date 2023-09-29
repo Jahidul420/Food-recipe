@@ -13,7 +13,8 @@ export default function Home() {
     exit={{opacity: 0}}
     transition={{duration: 0.5}}>
         <Veggie />
-        <Popular topTitle='Popular Picks' />
+        <Popular topTitle='Popular Picks' /> 
+
         <Popular />
     </motion.div>
   )

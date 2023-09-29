@@ -5,18 +5,19 @@ import Searched from "../component/Searched";
 import Cuisine from "./Cuisine";
 import Home from "./Home";
 import Recipe from "./Recipe";
+
+
+
 const Pages = () => {
-  
-    const location = useLocation();
+  const location = useLocation();
   return (
-  
     <AnimatePresence exitBeforeEnter>
-    <Routes location={location} key={location.pathname} >
-      <Route path="/" element={<Home />} />
-      <Route path="/cuisine/:type" element={<Cuisine />} />
-      <Route path="/searched/:search" element={<Searched />}/>
-      <Route path="/recipe/:name" element={<Recipe/>}/>
-    </Routes>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/cuisine/:type" element={<Cuisine />} />
+        <Route path="/searched/:search" element={<Searched />} />
+        <Route path="/recipe/:name" element={<Recipe />} />
+      </Routes>
     </AnimatePresence>
   );
 };
